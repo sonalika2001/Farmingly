@@ -1,0 +1,108 @@
+:root {
+  --paleyellow: #ffe169;
+  --lightyellow: #fad643;
+  --yellow: #f4e409;
+  --lightmustard: #eeba0b;
+  --darkmustard: #c36f09;
+  --brown: #a63606;
+  --maroon: #710000;
+  --white: white;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: "Cabin", sans-serif;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--darkmustard);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.21875rem;
+  padding: 30px 50px;
+  color: var(--white);
+  height: 5vh;
+}
+
+li a:active{
+    color:var(--maroon);
+}
+
+.active {
+  background-color: var(--lightmustard);
+}
+
+li:hover:not(.active) {
+  background-color: var(--lightmustard);
+}
+
+.smalllogo {
+  float: left;
+}
+
+.covid {
+  position: absolute;
+  bottom: 0;
+  background-color: var(--brown);
+  width: 100vw;
+  margin: 0;
+}
+p {
+  text-align: center;
+  font-size: 1.1rem;
+}
+p a {
+  text-decoration: none;
+  color: var(--white);
+  padding: 0;
+}
+
+p a:hover {
+  color: var(--paleyellow);
+}
+
+
+
+.mainlogo {
+  transform: scale(0.5, 0.5);
+  position: relative;
+  bottom: 200%;
+  left: 10%;
+}
+.hero {
+  height: 20vh;
+  position: relative;
+}
+
+.landing {
+  height: 100vh;
+}
+
+/* for mobiles */
+
+@media screen and (max-width: 600px) {
+  li {
+    float: none;
+  }
+  li a {
+    height: 0.5vh;
+  }
+}
