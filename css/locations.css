@@ -95,7 +95,7 @@ label {
 
   ul {
     right: -100vw;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in;
     top: 9.6vh;
     z-index: 1;
   }
@@ -111,6 +111,7 @@ label {
     display: block;
     cursor: pointer;
     background-color: var(--darkmustard);
+    color: var(--white);
     padding: 3vh 5vw 3vh 100vw;
     margin: 0;
     top: 0;

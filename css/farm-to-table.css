@@ -76,7 +76,7 @@ label {
 @media screen and (max-width: 600px) {
   ul {
     right: -100vw;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in;
     top: 9.6vh;
     z-index: 1;
   }
@@ -93,6 +93,7 @@ label {
     cursor: pointer;
     background-color: var(--darkmustard);
     padding: 3vh 5vw 3vh 100vw;
+    color: var(--white);
     margin: 0;
     top: 0;
     right: 0;
