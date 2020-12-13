@@ -1,0 +1,50 @@
+:root {
+  --paleyellow: #ffe169;
+  --lightyellow: #fad643;
+  --yellow: #f4e409;
+  --lightmustard: #eeba0b;
+  --darkmustard: #c36f09;
+  --brown: #a63606;
+  --maroon: #710000;
+  --white: white;
+}
+
+body{
+    margin:0;
+    padding: 0;
+    position: relative;
+    overflow-x:hidden;
+
+}
+ul{
+   list-style-type:none ;
+   padding-left: 1vw;
+   margin: 0; 
+   position: sticky;
+   top: 0;
+   bottom: 1vh;
+   
+   overflow: hidden;
+   color:black;
+   
+     
+}
+ul li h1{
+    margin: 0;
+    
+}
+
+
+section{
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background: url(/images/covid.jpg);
+    background-size: cover;
+    
+}
+
+p{
+ font-size: large;
+ line-height: 300%;
+}
