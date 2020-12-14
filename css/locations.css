@@ -13,7 +13,7 @@ body {
   position: relative;
   margin: 0;
   padding: 0;
-  font-family: "Cabin", sans-serif;
+  font-family: 'Lato', sans-serif;
   overflow-x: hidden;
 }
 
@@ -40,7 +40,7 @@ li a {
   font-size: 1.21875rem;
   padding: 4.3vh 50px;
   color: var(--white);
-  height: 5vh;
+  height: 4vh;
 }
 
 li a:active{
@@ -90,6 +90,34 @@ label {
   float: right;
   position: relative;
 }
+
+footer{
+  margin-top: 15vh ;
+  background-color: var(--maroon);
+  padding: 50px;
+}
+
+footer div{
+  display: inline-block;
+  color: var(--white);
+  font-size: 1.2rem;
+}
+
+.copyright{
+  position: absolute;
+  left: 6vw;
+  
+
+}
+.social-media{
+  position: absolute;
+  right: 6vw;
+}
+
+i{
+  padding: 0 1vw;
+}
+
 
 @media screen and (max-width: 600px) {
 

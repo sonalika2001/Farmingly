@@ -13,21 +13,88 @@ body{
     margin:0;
     padding: 0;
     position: relative;
+    font-family: 'Lato', sans-serif;
     overflow-x:hidden;
 
 }
+
 ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--darkmustard);
+  z-index: 1;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.21875rem;
+  padding: 4.3vh 50px;
+  color: var(--white);
+  height: 4vh;
+}
+
+li a:active {
+  color: var(--maroon);
+}
+
+ .active {
+  background-color: var(--lightmustard);
+}
+
+li:hover:not(.active) {
+  background-color: var(--lightmustard);
+}
+
+.smalllogo {
+  float: left;
+}
+
+label {
+  float: right;
+  color: var(--white);
+  position: fixed;
+  right: 3vw;
+  top: 2vh;
+  font-size: 1.21875rem;
+  display: none;
+}
+#toggle {
+  display: none;
+  color: var(--white);
+  float: right;
+  position: relative;
+}
+
+.title{
+
    list-style-type:none ;
-   padding-left: 1vw;
+   padding-left: 0.5vw;
    margin: 0; 
    position: sticky;
-   top: 0;
-   bottom: 1vh;
-   
+   top: 12.3vh;
+   bottom: 0vh;
+   font-family: 'Alegreya', serif;
+   font-size: 3rem;
    overflow: hidden;
    color:black;
    
      
+}
+
+.title h1{
+  padding: 0;
+  margin: 0;
 }
 ul li h1{
     margin: 0;
@@ -38,13 +105,82 @@ ul li h1{
 section{
     margin: 0;
     width: 100%;
-    height: 100vh;
+    height: 87.7vh;
     background: url(/images/covid.jpg);
     background-size: cover;
+    position: relative;
+    top:12.3vh;
     
 }
 
 p{
  font-size: large;
  line-height: 300%;
+ padding: 0;
+ 
+}
+
+.content{
+    position: relative;
+    top: 5vh;
+    
+}
+
+footer{
+  margin-top: 15vh ;
+  background-color: var(--maroon);
+  padding: 50px;
+}
+
+footer div{
+  display: inline-block;
+  color: var(--white);
+  font-size: 1.2rem;
+}
+
+.copyright{
+  position: absolute;
+  left: 6vw;
+  
+
+}
+.social-media{
+  position: absolute;
+  right: 6vw;
+}
+
+i{
+  padding: 0 1vw;
+}
+
+
+@media screen and (max-width: 600px) {
+  ul {
+    right: -100vw;
+    transition: all 0.5s ease-in;
+    top: 9.6vh;
+    z-index: 1;
+  }
+
+  li {
+    float: none;
+  }
+  li a {
+    height: 0.5vh;
+    text-align: center;
+  }
+  label {
+    display: block;
+    cursor: pointer;
+    background-color: var(--darkmustard);
+    color: var(--white);
+    padding: 3vh 5vw 3vh 100vw;
+    margin: 0;
+    top: 0;
+    right: 0;
+  }
+  #toggle:checked ~ * ul {
+    right: 0;
+    top: 9.6vh;
+  }
 }
