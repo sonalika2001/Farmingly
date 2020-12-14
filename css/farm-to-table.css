@@ -16,6 +16,7 @@ body {
   font-family: 'Lato', sans-serif;
   overflow-x: hidden;
   background-color: rgba(255, 243, 178, 1);
+  min-height: 100%;
 }
 
 
@@ -307,8 +308,5 @@ i{
     
   }
 
-  footer div{
-    font-size: 0.75rem;
-    
-  }
+  
 }

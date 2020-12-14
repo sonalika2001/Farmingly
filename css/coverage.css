@@ -15,6 +15,7 @@ body {
   padding: 0;
   font-family: 'Lato', sans-serif;
   overflow-x: hidden;
+  min-height: 100%;
 }
 
 ul {
@@ -131,8 +132,5 @@ i{
     top: 9.6vh;
   }
 
-  footer div{
-    font-size: 0.75rem;
-    
-  }
+  
 }

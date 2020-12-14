@@ -15,7 +15,7 @@ body{
     position: relative;
     font-family: 'Lato', sans-serif;
     overflow-x:hidden;
-
+    min-height: 100%;
 }
 
 ul{
@@ -81,9 +81,9 @@ label {
    list-style-type:none ;
    padding-left: 0.5vw;
    margin: 0; 
-   position: sticky;
-   top: 12.3vh;
-   bottom: 0vh;
+   position: absolute;
+   top: 88vh;
+   
    font-family: 'Alegreya', serif;
    font-size: 3rem;
    overflow: hidden;
@@ -92,14 +92,25 @@ label {
      
 }
 
-.title h1{
+
+
+.title h2{
   padding: 0;
   margin: 0;
+  color: var(--paleyellow);
 }
+
+
+
+
+
+
 ul li h1{
     margin: 0;
     
 }
+
+
 
 
 section{
@@ -113,23 +124,177 @@ section{
     
 }
 
-p{
- font-size: large;
- line-height: 300%;
- padding: 0;
- 
-}
+
 
 .content{
-    position: relative;
-    top: 5vh;
+    position: absolute;
+    top: 100vh;
+    
     
 }
 
+.container{
+  padding: 50px 60px 30px 60px;
+  
+}
+
+.lines{
+  width: 90vw;
+  height: 45px;
+  
+  position: relative;
+}
+
+.lines::before, .lines::after{
+  background: var(--darkmustard);
+  position: absolute;
+  content: '';
+  margin: auto;
+  height: 2px;
+  width: 38vw;
+  top: 45%;
+}
+
+.lines::after{
+  left: 5vw;
+}
+
+.lines::before{
+  right: 5vw;
+}
+
+#line{
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  font-size: 2rem;
+  color: var(--darkmustard);
+  text-align: center;
+}
+
+.intro p{
+  padding:0 15%;
+  font-size: 1.4rem;
+  text-align: center;
+  
+}
+
+.aim{
+  background: var(--lightmustard);
+  margin: 15vh 0;
+  transition: width 2s;
+}
+
+.aim p{
+  font-size: 2rem;
+  color: var(--maroon);
+}
+
+.aim:nth-child(even){
+  text-align: left;
+  width: 60vw;
+  padding: 5vh 10vw 5vh 2vw;
+}
+
+.aim:nth-child(even):hover{
+  width: 80vw;
+}
+
+
+.aim:nth-child(odd){
+  transform: translate(28vw,0);
+  text-align: right;
+  width: 60vw;
+  padding: 5vh 5vw 5vh 10vw;
+}
+
+.donate-button {
+  margin: 5vh 15vw 5vh 18vw;
+   background: #A63606;
+   background-image: -webkit-linear-gradient(top, #A63606, #C36F09);
+   background-image: -moz-linear-gradient(top, #A63606, #C36F09);
+   background-image: -ms-linear-gradient(top, #A63606, #C36F09);
+   background-image: -o-linear-gradient(top, #A63606, #C36F09);
+   background-image: -webkit-gradient(to bottom, #A63606, #C36F09);
+   -webkit-border-radius: 15px;
+   -moz-border-radius: 15px;
+   border-radius: 15px;
+   color: #FFFFFF;
+   font-family: 'Alegreya', serif;
+   font-size: 2rem;
+   font-weight: 600;
+   padding: 20px 50px;
+   border: solid #337FED 0;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+}
+
+.donate-button:hover {
+   border: solid #FFAE00 0;
+   background: #A63606;
+   background-image: -webkit-linear-gradient(top, #A63606, #C36F09);
+   background-image: -moz-linear-gradient(top, #A63606, #C36F09);
+   background-image: -ms-linear-gradient(top, #A63606, #C36F09);
+   background-image: -o-linear-gradient(top, #A63606, #C36F09);
+   background-image: -webkit-gradient(to bottom, #A63606, #C36F09);
+   -webkit-border-radius: 15px;
+   -moz-border-radius: 15px;
+   border-radius: 15px;
+   text-decoration: none;
+   color: var(--paleyellow);
+}
+
+.work-button {
+  margin: 5vh 15vw;
+   background: #A63606;
+   background-image: -webkit-linear-gradient(top, #A63606, #C36F09);
+   background-image: -moz-linear-gradient(top, #A63606, #C36F09);
+   background-image: -ms-linear-gradient(top, #A63606, #C36F09);
+   background-image: -o-linear-gradient(top, #A63606, #C36F09);
+   background-image: -webkit-gradient(to bottom, #A63606, #C36F09);
+   -webkit-border-radius: 15px;
+   -moz-border-radius: 15px;
+   border-radius: 15px;
+   color: #FFFFFF;
+   font-family: 'Alegreya', serif;
+   font-size: 2rem;
+   font-weight: 600;
+   padding: 20px 50px;
+   border: solid #337FED 0;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+}
+
+.work-button:hover {
+   border: solid #FFAE00 0;
+   background: #A63606;
+   background-image: -webkit-linear-gradient(top, #A63606, #C36F09);
+   background-image: -moz-linear-gradient(top, #A63606, #C36F09);
+   background-image: -ms-linear-gradient(top, #A63606, #C36F09);
+   background-image: -o-linear-gradient(top, #A63606, #C36F09);
+   background-image: -webkit-gradient(to bottom, #A63606, #C36F09);
+   -webkit-border-radius: 15px;
+   -moz-border-radius: 15px;
+   border-radius: 15px;
+   text-decoration: none;
+   color: var(--paleyellow);
+}
+
+
+
+
 footer{
-  margin-top: 15vh ;
+  margin-top: 400vh ;
   background-color: var(--maroon);
   padding: 50px;
+  
 }
 
 footer div{
@@ -154,7 +319,7 @@ i{
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   ul {
     right: -100vw;
     transition: all 0.5s ease-in;
@@ -178,17 +343,57 @@ i{
     margin: 0;
     top: 0;
     right: 0;
+    z-index: 1;
   }
   #toggle:checked ~ * ul {
     right: 0;
     top: 9.6vh;
   }
+ 
   
-  footer div{
-    font-size: 0.75rem;
-    
+
+  .title{
+    font-size: 2rem;
+    top: 40vh;
+  }
+
+  section{
+    height: 40vh;
+    max-width:100% ;
+    top: 8vh;
   }
   
+  .container{
+  padding: 0;
   
+}
+
+.content{
+  top: 55vh;
+}
+
+.aim p{
+  font-size: 1.3rem;
+}
+
+.aim:nth-child(odd){
+  transform: translate(25vw,0);
+  text-align: right;
+  width: 60vw;
+  padding: 5vh 5vw 5vh 10vw;
+}
+
+.donate-button{
+  font-size: 1.2rem;
+  margin: 5vh 10vw 5vh 10vw ;
+  padding: 5% 5%;
+}
+
+.work-button{
+  font-size: 1.2rem;
+  margin: 5vh 0vw 5vh 8vw;
+  padding: 5% 5%;
+}
+
 
 }
