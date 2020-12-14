@@ -226,7 +226,7 @@ footer div{
 .copyright{
   position: absolute;
   left: 6vw;
-  
+  bottom: 1.2rem;
 
 }
 .social-media{
@@ -304,6 +304,11 @@ i{
     width: 10%;
     
     
+    
+  }
+
+  footer div{
+    font-size: 0.75rem;
     
   }
 }
