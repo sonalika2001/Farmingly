@@ -75,6 +75,138 @@ iframe{
     height: 86vh;
 }
 
+.content{
+  height: 100%;
+  margin: 5vh 5vw;
+}
+
+.title1,.title2{
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  max-width: 100%;
+  position: relative;
+  margin: 7vh 1rem 7vh 1rem;
+  color: black;
+  font-size: 2.4rem;
+  z-index: -1;
+}
+
+.title1::before{
+  content: "";
+  display: block;
+  width: 32%;
+  height: 2px;
+  background: var(--darkmustard);
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.title1::after{
+  content: "";
+  display: block;
+  width: 32%;
+  height: 2px;
+  background: var(--darkmustard);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  
+}
+
+.title2::before{
+  content: "";
+  display: block;
+  width: 40%;
+  height: 2px;
+  background: var(--darkmustard);
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.title2::after{
+  content: "";
+  display: block;
+  width: 40%;
+  height: 2px;
+  background: var(--darkmustard);
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+.description{
+  display: flex;
+  max-width: 100%;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+img{
+  flex: 28%;
+  width: 25%;
+  margin: 10px;
+}
+
+.info-right{
+  flex: 28%;
+  align-items: flex-end;
+}
+
+.info-left{
+  flex: 28%;
+  align-items: flex-start;
+}
+
+
+.reviews{
+  margin: 3% 5% 5% 5%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  flex-flow: row wrap;
+  
+}
+
+.review{
+  margin: 1rem 0;
+  flex: 25%;
+}
+
+.stars i{
+  color: var(--brown);
+}
+
+.remark{
+  font-size: 20px;
+}
+
+.reviewer{
+  font-family: 'Alegreya', serif;
+  font-size: 1.5rem;
+}
+
+hr{
+  color:var(--lightmustard);
+  border-style: dotted none none;
+  width: 5%;
+  border-width: 5px;
+  margin-top: 4%;
+}
+p{
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+
+
+
+
+
 label {
   float: right;
   color: var(--white);
@@ -120,7 +252,7 @@ i{
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
 
   ul {
     right: -100vw;
@@ -156,6 +288,22 @@ i{
    top: 9.6vh;
   
   }
+
+  img, .info-left, .info-right{
+    flex: 100%;
+  }
+
+  .review{
+    flex: 100%;
+    width: 100%;
+  }
+
+  .title1::before, .title2::before, .title1::after, .title2::after{
+    display: none;
+    
+  }
+
+  
 
  
   

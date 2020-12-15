@@ -189,7 +189,7 @@ section{
 }
 
 .aim p{
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--maroon);
 }
 
@@ -224,7 +224,7 @@ section{
    border-radius: 15px;
    color: #FFFFFF;
    font-family: 'Alegreya', serif;
-   font-size: 2rem;
+   font-size: 1.3rem;
    font-weight: 600;
    padding: 20px 50px;
    border: solid #337FED 0;
@@ -262,7 +262,7 @@ section{
    border-radius: 15px;
    color: #FFFFFF;
    font-family: 'Alegreya', serif;
-   font-size: 2rem;
+   font-size: 1.3rem;
    font-weight: 600;
    padding: 20px 50px;
    border: solid #337FED 0;
@@ -373,7 +373,7 @@ i{
 }
 
 .aim p{
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 .aim:nth-child(odd){
