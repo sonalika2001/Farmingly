@@ -115,42 +115,244 @@ li:hover:not(.active) {
 .column1{
   width: 40vw;
   height: 80vh;
-  background-color: #710000;
+  background-color: transparent;
   margin: 5vh; 
 position: relative;
   top: -10vh;
   left: 50vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-sizing: border-box;
 }
+
+.sub-column-1{
+  height: 50vh;
+  width: 40vw;
+  margin: 0;
+  background-color: var(--white);
+  position: absolute;
+  top: 0;
+}
+
+.sub-sub-column-1{
+  height: 30vh;
+  width: 40vw;
+  background-color: var(--maroon);
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  color:var(--white);
+  line-height: 1.5;
+  
+}
+
+.who-we-are{
+  width: 40vw;
+  height: 50vh;
+}
+
+
+
+
+
+ .who-title{
+   font-family: 'Dancing Script', cursive;
+   font-size: 2.5rem;
+   font-weight: bold;
+   text-align: center;
+   color: var(--paleyellow);
+   padding: 0;
+   line-height: normal;
+   
+ }
+
+ 
+ 
+
+
+
+
+
+
+
 
 .column2{
   width: 40vw;
   height: 80vh;
-  background-color: #710000;
+  background-color: transparent;
   margin: 5vh; 
   position: relative;
   top: -60vh;
   left: 3vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+.sub-column-2{
+  height: 50vh;
+  width: 40vw;
+  margin: 0;
+  background-color: var(--white);
+  position: absolute;
+  top: 0;
+}
+
+.sub-sub-column-2{
+  height: 30vh;
+  width: 40vw;
+  background-color: var(--maroon);
+  position: absolute;
+  bottom: 0;
+}
+
+
+.what-title{
+   font-family: 'Dancing Script', cursive;
+   font-size: 2.5rem;
+   font-weight: bold;
+   text-align: center;
+   color: var(--darkmustard);
+   padding: 0;
+   background-color:#E6E7E9;
+   margin: 0 2vw;
+   padding: 5vh;
+ }
+
+ .aim{
+   font-size: 1.2rem;
+   text-align: center;
+   line-height: 1.5;
+   background-color:#E6E7E9;
+   margin: 0 2vw;
+ }
+
+ .man{
+   transform: scale(0.2,0.2);
+   position: absolute;
+   bottom: -55vh;
+   left: -1vw;
+ }
+
+ .woman{
+   transform: scale(0.2,0.2);
+   position: absolute;
+   bottom: -55vh;
+   right: -1vw;
+ }
+
+
+
+
 
 .column3{
   width: 40vw;
   height: 80vh;
-  background-color: #710000;
+  background-color: transparent;
   margin: 5vh; 
   position: relative;
   top: -70vh;
   left: 50vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sub-column-3{
+  height: 50vh;
+  width: 40vw;
+  margin: 0;
+  background-color: var(--white);
+  position: absolute;
+  top: 0;
+}
+
+.sub-sub-column-3{
+  height: 30vh;
+  width: 40vw;
+  background-color: var(--maroon);
+  position: absolute;
+  bottom: 0;
+}
+
+.tractor{
+  position: absolute;
+  width: 40vw;
+  top: 5vh;
+}
+
+
+.why-title{
+  font-family: 'Dancing Script', cursive;
+   font-size: 2.5rem;
+   
+   text-align: center;
+   color: var(--paleyellow);
+   padding: 0;
+   margin: 2vh 0 0 0;
+}
+
+.why{
+  color: var(--white);
+  margin: 20px;
+  line-height: 1.5;
 }
 
 .column4{
   width: 40vw;
   height: 80vh;
-  background-color: #710000;
+  background-color: transparent;
   margin: 5vh; 
   position: relative;
   top: -110vh;
   left: 3vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+.sub-column-4{
+  height: 60vh;
+  width: 40vw;
+  margin: 0;
+  background-color: var(--white);
+  position: absolute;
+  top: 0;
+}
+
+.here-now {
+  width: 40vw;
+  position: absolute;
+  bottom: 0;
+  height: 20vh;
+  background-color: #710000;
+}
+
+.when{
+  font-family: 'Dancing Script', cursive;
+   font-size: 3rem;
+   line-height: 1.5;
+   text-align: center;
+   color: var(--white);
+   padding: 0;
+   margin: 1vh 0 0 0;
+   word-spacing: 0.5rem;
+   letter-spacing: 0.2rem;
+   
+}
+
+.sub-column-4 iframe{
+  height: 50vh;
+  width: 40vw;
+}
+.column-title{
+  color: var(--brown);
+  font-style:oblique ;
+  font-size: 1.6rem;
+  position: relative;
+  bottom: 1.8rem;
+}
+
+.column-title span{
+  color: black;
+  font-style: normal;
+  font-weight: bold;
+}
+
+
 
 
 
@@ -210,7 +412,7 @@ i{
 
 /* for mobiles */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   ul {
     right: -100vw;
     transition: all 0.5s ease-in;
@@ -234,9 +436,143 @@ i{
     margin: 0;
     top: 0;
     right: 0;
+    z-index: 1;
   }
   #toggle:checked ~ * ul {
     right: 0;
     top: 9.6vh;
+  }
+
+  .title{
+    width: 100%;
+    font-size: 2rem;
+    padding: 10% 0;
+  }
+
+  .content1{
+    height: 120%;
+  }
+
+  .content2{
+    height: 400vh;
+  }
+
+  .column1,.sub-column-1,.sub-sub-column-1,.who-we-are{
+    left: 0;
+    width: 100%;
+    margin: 0;
+    
+    
+    position: absolute;
+
+  }
+
+  .who-title{
+    font-size: 2rem;
+  }
+  
+  .sub-sub-column-1 p{
+    margin: 5%;
+  }
+
+  
+  .column2{
+    position: absolute;
+    top: 90vh;
+    width: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  .column-title{
+    bottom: 8vh;
+    
+  }
+
+  .aim,.sub-column-2,.sub-sub-column-2{
+    
+    margin: 0 ;
+    left: 0;
+    width: 100%;
+  }
+  .aim{
+    padding:5% 10% 5% 2px;
+    font-size: 1rem;
+    text-align: left;
+  }
+
+ 
+
+  .what-title{
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    font-size: 2rem;
+  }
+
+   .man{
+     left: -30vw;
+    
+   }
+   .woman{
+     right: -30vw;
+   }
+
+  .column3{
+    position: absolute;
+    top: 200vh;
+    width: 100%;
+    margin: 0;
+    left: 0;
+  }
+
+  .sub-column-3,.sub-sub-column-3{
+    margin: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .tractor{
+    width: 100%;
+  }
+
+  .why-title{
+    font-size: 2rem;
+  }
+
+  .why{
+    font-size: 1rem;
+    
+  }
+
+
+
+
+  .column4{
+    position: absolute;
+    top: 300vh;
+    width: 100%;
+    min-width: 100%;
+    left: 0;
+    margin: 0;
+  }
+
+
+  .sub-column-4,.here-now{
+    margin: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .sub-column-4 iframe{
+    width: 100%;
+     
+  }
+
+
+  .footer{
+    top: 800vh;
   }
 }
