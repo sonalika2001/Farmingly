@@ -72,8 +72,116 @@ label {
   position: relative;
 }
 
+section{
+    margin: 0;
+    width: 100%;
+    height: 87.7vh;
+    background: url(/images/covid.jpg);
+    background-size: cover;
+    position: relative;
+    top:12.3vh;
+    
+}
+
+section p{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  position: relative;
+  top: 60%;
+  font-family: 'Alegreya', serif;
+  font-size: 3.5rem;
+  font-weight: bold;
+  color:var(--white);
+}
+
+
+.content{
+  height: 100vh;
+  margin: 20vh 0;
+}
+
+
+.reviews{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+@keyframes reviews {
+  0% {background-color:var(--paleyellow);color: var(--maroon);}
+  25% {background-color: var(--lightyellow);color: var(--maroon);}
+  50% {background-color:var(--darkmustard);color: var(--paleyellow);}
+  100% {background-color:var(--brown);color: var(--white);}
+  
+
+}
+
+.review{
+  margin: 5vh 0;
+  padding: 10vh 5vw;
+  background-color: var(--paleyellow);
+  animation: reviews 3s ease-in-out 2s infinite alternate;
+}
+
+.remark{
+  font-size: 2rem;
+
+}
+
+.reviewer{
+  font-size: 1.35rem;
+  font-family: 'Alegreya', serif;
+}
+
+
+.divider{
+  margin: 10vh 20vw 5vh 20vw;
+  height: 1.5px;
+}
+
+hr{
+  margin: 4vh 45vw 4vh 45vw;
+  border-style: solid none none none;
+  height: 3px;
+  background-color: var(--maroon);
+  
+}
+
+
+h1{
+  text-align: center;
+  margin-bottom: 5vh;
+}
+
+.frames{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+iframe{
+  flex: 30%;
+  margin: 5%;
+  height: 80vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 footer{
-  margin-top: 15vh ;
+  margin-top: 550vh ;
   background-color: var(--maroon);
   padding: 50px;
 }
@@ -132,5 +240,20 @@ i{
     top: 9.6vh;
   }
 
+
+  section{
+    height: 40vh;
+    max-width:100% ;
+    top: 8vh;
+  }
+
+  section p{
+    top: 20vh;
+    font-size: 2rem;
+  }
+
+  footer{
+    margin-top: 900vh;
+  }
   
 }
