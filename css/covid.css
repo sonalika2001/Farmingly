@@ -211,81 +211,97 @@ section{
   padding: 5vh 5vw 5vh 10vw;
 }
 
-.donate-button {
-  margin: 5vh 15vw 5vh 18vw;
-   background: #A63606;
-   background-image: -webkit-linear-gradient(top, #A63606, #C36F09);
-   background-image: -moz-linear-gradient(top, #A63606, #C36F09);
-   background-image: -ms-linear-gradient(top, #A63606, #C36F09);
-   background-image: -o-linear-gradient(top, #A63606, #C36F09);
-   background-image: -webkit-gradient(to bottom, #A63606, #C36F09);
-   -webkit-border-radius: 15px;
-   -moz-border-radius: 15px;
-   border-radius: 15px;
-   color: #FFFFFF;
-   font-family: 'Alegreya', serif;
-   font-size: 1.3rem;
-   font-weight: 600;
-   padding: 20px 50px;
-   border: solid #337FED 0;
-   text-decoration: none;
-   display: inline-block;
-   cursor: pointer;
-   text-align: center;
+.button1 {
+ 
+  display: inline-block;
+  border-radius: 4px;
+  background-color: var(--paleyellow);
+  border: none;
+  color: var(--maroon);
+  text-align: center;
+  font-size: 28px;
+  padding: 30px;
+  width: 250px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
 }
 
-.donate-button:hover {
-   border: solid #FFAE00 0;
-   background: #A63606;
-   background-image: -webkit-linear-gradient(top, #A63606, #C36F09);
-   background-image: -moz-linear-gradient(top, #A63606, #C36F09);
-   background-image: -ms-linear-gradient(top, #A63606, #C36F09);
-   background-image: -o-linear-gradient(top, #A63606, #C36F09);
-   background-image: -webkit-gradient(to bottom, #A63606, #C36F09);
-   -webkit-border-radius: 15px;
-   -moz-border-radius: 15px;
-   border-radius: 15px;
-   text-decoration: none;
-   color: var(--paleyellow);
+.button2 {
+ 
+  display: inline-block;
+  border-radius: 4px;
+  background-color: var(--paleyellow);
+  border: none;
+  color: var(--maroon);
+  text-align: center;
+  font-size: 28px;
+  padding: 30px;
+  width: 250px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
 }
 
-.work-button {
-  margin: 5vh 15vw;
-   background: #A63606;
-   background-image: -webkit-linear-gradient(top, #A63606, #C36F09);
-   background-image: -moz-linear-gradient(top, #A63606, #C36F09);
-   background-image: -ms-linear-gradient(top, #A63606, #C36F09);
-   background-image: -o-linear-gradient(top, #A63606, #C36F09);
-   background-image: -webkit-gradient(to bottom, #A63606, #C36F09);
-   -webkit-border-radius: 15px;
-   -moz-border-radius: 15px;
-   border-radius: 15px;
-   color: #FFFFFF;
-   font-family: 'Alegreya', serif;
-   font-size: 1.3rem;
-   font-weight: 600;
-   padding: 20px 50px;
-   border: solid #337FED 0;
-   text-decoration: none;
-   display: inline-block;
-   cursor: pointer;
-   text-align: center;
+.button1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
 
-.work-button:hover {
-   border: solid #FFAE00 0;
-   background: #A63606;
-   background-image: -webkit-linear-gradient(top, #A63606, #C36F09);
-   background-image: -moz-linear-gradient(top, #A63606, #C36F09);
-   background-image: -ms-linear-gradient(top, #A63606, #C36F09);
-   background-image: -o-linear-gradient(top, #A63606, #C36F09);
-   background-image: -webkit-gradient(to bottom, #A63606, #C36F09);
-   -webkit-border-radius: 15px;
-   -moz-border-radius: 15px;
-   border-radius: 15px;
-   text-decoration: none;
-   color: var(--paleyellow);
+.button2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
+
+.button1 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button2 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button1:hover span {
+  padding-right: 25px;
+}
+
+.button2:hover span {
+  padding-right: 25px;
+}
+
+.button1:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.button2:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.button1{
+  position: relative;
+  left: 10%;
+}
+.button2{
+  position: relative;
+  left: 50%;
+}
+
 
 
 

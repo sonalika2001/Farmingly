@@ -56,7 +56,7 @@ li:hover:not(.active) {
   background-color: var(--lightmustard);
 }
 
-label {
+.navig{
   float: right;
   color: var(--white);
   position: fixed;
@@ -72,8 +72,165 @@ label {
   position: relative;
 }
 
+.content{
+  height: 100vh;
+  margin-top:12.4vh ;
+}
+
+
+.contact{
+  display: flex;
+
+  margin: 5%;
+  width: 100vw;
+  height: 60vh;
+  
+}
+.contact-text{
+  
+  position: absolute;
+  top: 15vh;
+  flex: 30%;
+  
+}
+
+.connect{
+  font-size: 4rem;
+  font-family: 'Alegreya', serif;
+  font-weight: bold;
+  margin: 0;
+  color: var(--maroon);
+}
+
+.feel-free{
+  font-size: 2rem;
+  
+}
+
+.contact-form{
+  position: absolute;
+  right: 5%;
+  top: 6vh;
+  width: 40%;
+  padding:2% 5%;
+  flex: 30%;
+}
+
+.scroll{
+  transform: scale(0.3,0.25);
+  margin: 0;
+  position: absolute;
+  top: -13vh;
+  left: -10vw;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 3.5%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 4.2% 4% 4.2% 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: var(--maroon);
+  color: white;
+  padding: 3% 10%;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  margin: 2%;
+}
+
+input[type=submit]:hover {
+  background-color:var(--darkmustard);
+}
+
+.contact-form{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.donate{
+  background-color: var(--paleyellow);
+  width: 100%;
+  height: 150%;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.stand{
+ transform: scale(1,1);
+ position: relative;
+ 
+}
+
+.donate-info{
+  width: 80%;
+  text-align: center;
+  font-family: 'Alegreya', serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.donate-text{
+  position: absolute;
+  left: 60vw;
+  
+}
+
+
+.donate-form{
+  width: 40%;
+  margin: 2% 3%;
+  
+}
+
+.heading{
+  text-align: center;
+  padding-bottom: 5%;
+  font-size: 1.5rem;
+  font-family: 'Alegreya', serif;
+}
+
+
+
+
+
+
+
+
+
+
 footer{
-  margin-top: 15vh ;
+  margin-top: 150vh ;
   background-color: var(--maroon);
   padding: 50px;
 }
@@ -117,7 +274,7 @@ i{
     height: 0.5vh;
     text-align: center;
   }
-  label {
+ .navig {
     display: block;
     cursor: pointer;
     background-color: var(--darkmustard);
@@ -126,9 +283,66 @@ i{
     margin: 0;
     top: 0;
     right: 0;
+    z-index: 1;
   }
   #toggle:checked ~ * ul {
     right: 0;
     top: 9.6vh;
+  }
+  
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .content{
+    height: 200vh;
+  }
+
+  footer{
+    margin-top: 300vh;
+  }
+
+  .contact,.donate{
+    flex-direction: column;
+    display: block;
+  }
+
+  .contact-form{
+    width: 80%;
+    padding-right: 12%;
+    padding-left: 20%;
+    top: 100vh;
+    background-color: transparent;
+  }
+
+  .donate-text{
+    top: 230vh;
+    left: 0;
+  }
+
+  .donate-form{
+    width: 80%;
+    top: 330vh;
+    position: absolute;
+  }
+  .donate{
+    height: 200%;
+   
+  }
+  .donate-info{
+    width: 90%;
+    padding: 5%;
+    
+  }
+  .heading{
+    width: 100%;
+    padding: 5%;
+  }
+
+  input[type=submit] {
+    position: relative;
+    left: 5%;
+    top: 5vh;
   }
 }
