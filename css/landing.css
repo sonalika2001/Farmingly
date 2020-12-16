@@ -89,10 +89,10 @@ p a:hover {
   width: 100vw;
   
 }
-.hero {
+.hero img{
  
   position: absolute;
-  height: 10vh;
+  height: 100vh;
   width: 100vw;
   top: 12.4vh;
 }
@@ -150,4 +150,5 @@ label {
     right: 0;
     top: 9.6vh;
   }
+  
 }
