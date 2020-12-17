@@ -27,7 +27,7 @@ ul {
   top: 0;
   width: 100%;
   background-color: var(--darkmustard);
-  z-index: 1;
+  z-index: 2;
 }
 
 
@@ -88,6 +88,26 @@ li:hover:not(.active) {
 iframe{
     width: 100vw;
     height: 86vh;
+    z-index: -1;
+}
+
+.scroll{
+  z-index: 1;
+  position: absolute;
+  right: 1vw;
+  top: 90vh;
+  background-color: var(--darkmustard);
+  padding: 15px;
+  border-radius: 140px;
+}
+
+.scroll a{
+  text-decoration: none;
+  color: var(--white);
+}
+
+.scroll a:hover{
+  color: var(--maroon);
 }
 
 .content{
@@ -324,7 +344,7 @@ i{
 }
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
 
   ul {
     right: -120vw;
@@ -396,7 +416,11 @@ i{
     left: 18vw;
   }
 
-  
+  .scroll{
+    display: none;
+  }
+
+
 
  
   

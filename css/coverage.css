@@ -236,7 +236,7 @@ i{
 
 /* for mobiles */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
   ul {
     right: -120vw;
     transition: all 0.5s ease-in;
