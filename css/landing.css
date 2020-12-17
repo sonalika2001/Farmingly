@@ -128,7 +128,7 @@ p a:hover {
   width: 100vw;
   text-align: center;
   position: absolute;
-  bottom: 30vh;
+  bottom: 25vh;
   font-family: 'Alegreya', serif;
   font-size: 2rem;
   font-weight: bold;
@@ -192,7 +192,7 @@ label {
 
   .hero .title{
     font-size: 6rem;
-    top: 30vh;
+    top: 20vh;
   }
 
   .tagline{
@@ -208,6 +208,9 @@ label {
     z-index: 2;
     position: fixed;
     left: 2vw;
+  }
+  .tagline{
+    bottom: 20vh;
   }
   
   

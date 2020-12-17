@@ -324,7 +324,11 @@ i{
   }
 
   footer{
-    margin-top: 350vh;
+    margin-top: 450vh;
+  }
+
+  .stand{
+    width: 100%;
   }
 
   .contact,.donate{
@@ -347,11 +351,11 @@ i{
 
   .donate-form{
     width: 80%;
-    top: 330vh;
+    top: 360vh;
     position: absolute;
   }
   .donate{
-    height: 200%;
+    height: 230%;
    
   }
   .donate-info{
