@@ -162,7 +162,7 @@ label {
   ul {
     right: -120vw;
     transition: all 0.5s ease-in;
-    top: 9.6vh;
+    top: 9.1vh;
     z-index: 1;
   }
 
@@ -187,7 +187,7 @@ label {
   }
   #toggle:checked ~ * ul {
     right: 0;
-    top: 9.6vh;
+    top: 9.1vh;
   }
 
   .hero .title{

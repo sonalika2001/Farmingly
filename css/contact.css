@@ -235,7 +235,19 @@ input[type=submit]:hover {
 
 
 
+.citations{
+  text-decoration: none;
+  color: var(--maroon);
+  position: absolute;
+  bottom: 10vh;
+  right: 0;
+  width: 200px;
+  padding: 0.5%;
+}
 
+.citations:hover{
+  color: var(--darkmustard);
+}
 
 
 
@@ -275,7 +287,7 @@ i{
   ul {
     right: -120vw;
     transition: all 0.5s ease-in;
-    top: 9.6vh;
+    top: 9.1vh;
     z-index: 1;
   }
 
@@ -299,7 +311,7 @@ i{
   }
   #toggle:checked ~ * ul {
     right: 0;
-    top: 9.6vh;
+    top: 9.1vh;
   }
   
   .col-25, .col-75, input[type=submit] {

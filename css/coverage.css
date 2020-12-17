@@ -194,7 +194,7 @@ iframe{
 
 
 footer{
-  margin-top: 500vh ;
+  margin-top: 550vh ;
   background-color: var(--maroon);
   padding: 50px;
 }
@@ -227,7 +227,7 @@ i{
   ul {
     right: -120vw;
     transition: all 0.5s ease-in;
-    top: 9.6vh;
+    top: 9.1vh;
     z-index: 1;
   }
 
@@ -251,7 +251,7 @@ i{
   }
   #toggle:checked ~ * ul {
     right: 0;
-    top: 9.6vh;
+    top: 9.1vh;
   }
 
 
@@ -278,7 +278,7 @@ i{
   }
 
   footer{
-    margin-top: 700vh;
+    margin-top: 900vh;
   }
   
 }

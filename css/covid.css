@@ -58,7 +58,7 @@ li:hover:not(.active) {
 
 .smalllogo {
   z-index: 2;
-  position: absolute;
+  position: fixed;
   
 }
 
@@ -317,7 +317,19 @@ section{
 }
 
 
+.citations{
+  text-decoration: none;
+  color: var(--maroon);
+  position: absolute;
+ 
+  right: 0;
+  width: 200px;
+  padding: 0.5%;
+}
 
+.citations:hover{
+  color: var(--darkmustard);
+}
 
 
 footer{

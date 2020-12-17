@@ -282,6 +282,20 @@ label {
   position: relative;
 }
 
+.citations{
+  text-decoration: none;
+  color: var(--maroon);
+  position: absolute;
+ 
+  right: 0;
+  width: 200px;
+  padding: 0.5%;
+}
+
+.citations:hover{
+  color: var(--darkmustard);
+}
+
 footer{
   margin-top: 15vh ;
   background-color: var(--maroon);
@@ -315,7 +329,7 @@ i{
   ul {
     right: -120vw;
     transition: all 0.5s ease-in;
-    top: 9.6vh;
+    top: 9.1vh;
     z-index: 1;
   }
 
@@ -340,7 +354,7 @@ i{
   }
   #toggle:checked ~ * ul {
     right: 0;
-    top: 9.6vh;
+    top: 9.1vh;
   }
  
   .map{
