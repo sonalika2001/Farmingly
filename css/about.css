@@ -28,6 +28,7 @@ ul {
   width: 100%;
   background-color: var(--darkmustard);
   z-index: 1;
+   min-height: 50px;
 }
 
 li {
@@ -50,6 +51,7 @@ li a:active {
 
 .active {
   background-color: var(--lightmustard);
+   min-height: 50px;
 }
 
 li:hover:not(.active) {
@@ -390,6 +392,7 @@ label {
   top: 2vh;
   font-size: 1.21875rem;
   display: none;
+  
 }
 #toggle {
   display: none;
@@ -453,6 +456,7 @@ i{
     transition: all 0.5s ease-in;
     top: 9.1vh;
     z-index: 1;
+     min-height: 50px;
   }
 
   li {
@@ -472,6 +476,7 @@ i{
     top: 0;
     right: 0;
     z-index: 1;
+     min-height: 50px;
   }
   #toggle:checked ~ * ul {
     right: 0;

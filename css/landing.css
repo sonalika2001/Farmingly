@@ -9,7 +9,9 @@
   --white: white;
 }
 
-
+html{
+  min-height: 800px;
+}
 
 
 body {
@@ -32,6 +34,7 @@ ul {
   width: 100%;
   background-color: var(--darkmustard);
   z-index: 1;
+  min-height: 50px;
 }
 
 li {
@@ -54,6 +57,7 @@ li a:active {
 
 .active {
   background-color: var(--lightmustard);
+   min-height: 50px;
 }
 
 li:hover:not(.active) {
@@ -168,6 +172,7 @@ label {
     transition: all 0.5s ease-in;
     top: 9.1vh;
     z-index: 1;
+     min-height: 50px;
   }
 
   li {
@@ -176,6 +181,7 @@ label {
   li a {
     height: 0.5vh;
     text-align: center;
+     min-height: 50px;
   }
   label {
     display: block;
@@ -188,6 +194,7 @@ label {
     right: 0;
     position: fixed;
     z-index: 1;
+     min-height: 50px;
   }
   #toggle:checked ~ * ul {
     right: 0;

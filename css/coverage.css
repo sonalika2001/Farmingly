@@ -9,6 +9,10 @@
   --white: white;
 }
 
+html{
+  min-height: 800px;
+}
+
 body {
   position: relative;
   margin: 0;
@@ -28,6 +32,7 @@ ul {
   width: 100%;
   background-color: var(--darkmustard);
   z-index: 1;
+   min-height: 50px;
 }
 
 li {
@@ -42,6 +47,7 @@ li a {
   padding: 4.3vh 50px;
   color: var(--white);
   height: 4vh;
+ 
 }
 
 li a:active {
@@ -51,6 +57,7 @@ li a:active {
 
 .active {
   background-color: var(--lightmustard);
+   min-height: 50px;
 }
 
 li:hover:not(.active) {
@@ -242,6 +249,7 @@ i{
     transition: all 0.5s ease-in;
     top: 9.1vh;
     z-index: 1;
+     min-height: 50px;
   }
 
   li {
@@ -250,6 +258,7 @@ i{
   li a {
     height: 0.5vh;
     text-align: center;
+     
   }
   label {
     display: block;
@@ -261,6 +270,7 @@ i{
     top: 0;
     right: 0;
     z-index: 1;
+     min-height: 50px;
   }
   #toggle:checked ~ * ul {
     right: 0;
