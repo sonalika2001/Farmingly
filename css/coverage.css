@@ -204,7 +204,7 @@ iframe{
 
 
 footer{
-  margin-top: 400vh ;
+  margin-top: 520vh ;
   background-color: var(--maroon);
   padding: 50px;
 }
@@ -288,7 +288,7 @@ i{
   }
 
   footer{
-    margin-top: 700vh;
+    margin-top: 820vh;
   }
   
 }
