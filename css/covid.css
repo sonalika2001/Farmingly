@@ -321,7 +321,7 @@ section{
   text-decoration: none;
   color: var(--maroon);
   position: absolute;
- 
+  bottom: 10vh;
   right: 0;
   width: 200px;
   padding: 0.5%;
@@ -333,7 +333,7 @@ section{
 
 
 footer{
-  margin-top: 400vh ;
+  margin-top: 350vh ;
   background-color: var(--maroon);
   padding: 50px;
   
