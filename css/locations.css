@@ -21,7 +21,7 @@ body {
 ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding-left: 20vw;
   overflow: hidden;
   position: fixed;
   top: 0;
@@ -29,6 +29,8 @@ ul {
   background-color: var(--darkmustard);
   z-index: 1;
 }
+
+
 
 li {
   float: left;
@@ -57,7 +59,20 @@ li:hover:not(.active) {
 }
 
 .smalllogo {
-  float: left;
+  z-index: 2;
+  transform: scale(0.5,0.5);
+  position: fixed;
+  top: -12vh;
+  left: -5vw;
+  display: none;
+
+  
+}
+
+.mobilelogo{
+  
+  position: absolute;
+  display: none;
 }
 
 .screen{
@@ -295,10 +310,10 @@ i{
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
 
   ul {
-    right: -100vw;
+    right: -120vw;
     transition: all 0.5s ease-in;
     top: 9.6vh;
     z-index: 1;
@@ -312,6 +327,7 @@ i{
     text-align: center;
   }
   label {
+    position: fixed;
     display: block;
     cursor: pointer;
     background-color: var(--darkmustard);
@@ -320,6 +336,7 @@ i{
     margin: 0;
     top: 0;
     right: 0;
+    z-index: 1;
   }
   #toggle:checked ~ * ul {
     right: 0;
@@ -344,6 +361,20 @@ i{
   .title1::before, .title2::before, .title1::after, .title2::after{
     display: none;
     
+  }
+
+  .smalllogo{
+    display:none;
+  }
+
+  .mobilelogo{
+    position: fixed;
+    display: inline;
+    z-index: 2;
+    width: 191px;
+    height: 70px;
+    left: 2vw;
+    top: -1.5vh;
   }
 
   .button{

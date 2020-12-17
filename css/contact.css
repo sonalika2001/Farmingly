@@ -21,7 +21,7 @@ body {
 ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding-left: 20vw;
   overflow: hidden;
   position: fixed;
   top: 0;
@@ -54,6 +54,18 @@ li a:active {
 
 li:hover:not(.active) {
   background-color: var(--lightmustard);
+}
+
+.smalllogo {
+  z-index: 2;
+  position: fixed;
+  top: 0vh;
+}
+
+.mobilelogo{
+  
+  position: absolute;
+  display: none;
 }
 
 .navig{
@@ -259,9 +271,9 @@ i{
 
 /* for mobiles */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   ul {
-    right: -100vw;
+    right: -120vw;
     transition: all 0.5s ease-in;
     top: 9.6vh;
     z-index: 1;
@@ -300,7 +312,7 @@ i{
   }
 
   footer{
-    margin-top: 300vh;
+    margin-top: 350vh;
   }
 
   .contact,.donate{
@@ -344,5 +356,17 @@ i{
     position: relative;
     left: 5%;
     top: 5vh;
+  }
+
+  .smalllogo{
+    display:none;
+  }
+
+  .mobilelogo{
+    display: inline;
+    position: fixed;
+    z-index: 2;
+    top: 0vh;
+    left: 2vw;
   }
 }

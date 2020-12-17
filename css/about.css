@@ -21,7 +21,7 @@ body {
 ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding-left: 20vw;
   overflow: hidden;
   position: fixed;
   top: 0;
@@ -56,10 +56,23 @@ li:hover:not(.active) {
   background-color: var(--lightmustard);
 }
 
+
+.smalllogo {
+  z-index: 2;
+  position: fixed;
+  
+}
+
+.mobilelogo{
+  
+  position: absolute;
+  display: none;
+}
+
 .content1{
   height: 100%;
   display: block;
-  padding-top: 20vh;
+  padding-top: 35vh;
   margin-left: 3vw;
   margin-right: 3vw;
   padding-bottom: 10vh;
@@ -141,7 +154,7 @@ position: relative;
   bottom: 0;
   text-align: center;
   color:var(--white);
-  line-height: 1.5;
+  line-height: 1.2;
   
 }
 
@@ -156,7 +169,7 @@ position: relative;
 
  .who-title{
    font-family: 'Dancing Script', cursive;
-   font-size: 2.5rem;
+   font-size: 2.3rem;
    font-weight: bold;
    text-align: center;
    color: var(--paleyellow);
@@ -165,6 +178,7 @@ position: relative;
    
  }
 
+ 
  
  
 
@@ -227,15 +241,16 @@ position: relative;
  .man{
    transform: scale(0.2,0.2);
    position: absolute;
+   
    bottom: -55vh;
-   left: -1vw;
+   left: -5vw;
  }
 
  .woman{
    transform: scale(0.2,0.2);
    position: absolute;
    bottom: -55vh;
-   right: -1vw;
+   right: -5vw;
  }
 
 
@@ -268,6 +283,11 @@ position: relative;
   background-color: var(--maroon);
   position: absolute;
   bottom: 0;
+}
+
+.mission{
+  width: 40vw;
+  height: 30vh;
 }
 
 .tractor{
@@ -307,7 +327,7 @@ position: relative;
 .sub-column-4{
   height: 60vh;
   width: 40vw;
-  margin: 0;
+  margin-top: 5px;
   background-color: var(--white);
   position: absolute;
   top: 0;
@@ -324,7 +344,7 @@ position: relative;
 .when{
   font-family: 'Dancing Script', cursive;
    font-size: 3rem;
-   line-height: 1.5;
+   line-height: 1.3;
    text-align: center;
    color: var(--white);
    padding: 0;
@@ -412,9 +432,9 @@ i{
 
 /* for mobiles */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   ul {
-    right: -100vw;
+    right: -120vw;
     transition: all 0.5s ease-in;
     top: 9.6vh;
     z-index: 1;
@@ -451,6 +471,7 @@ i{
 
   .content1{
     height: 120%;
+    padding-top: 15vh;
   }
 
   .content2{
@@ -512,13 +533,9 @@ i{
     font-size: 2rem;
   }
 
-   .man{
-     left: -30vw;
-    
-   }
-   .woman{
-     right: -30vw;
-   }
+
+  
+   
 
   .column3{
     position: absolute;
@@ -559,6 +576,9 @@ i{
     margin: 0;
   }
 
+  .mission{
+    width: 100%;
+  }
 
   .sub-column-4,.here-now{
     margin: 0;
@@ -569,6 +589,18 @@ i{
   .sub-column-4 iframe{
     width: 100%;
      
+  }
+
+  .smalllogo{
+    display:none;
+  }
+
+  .mobilelogo{
+    position: fixed;
+    display: inline;
+    z-index: 2;
+    
+    left: 2vw;
   }
 
 

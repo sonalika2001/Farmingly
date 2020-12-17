@@ -21,7 +21,7 @@ body {
 ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding-left: 20vw;
   overflow: hidden;
   position: fixed;
   top: 0;
@@ -57,7 +57,16 @@ li:hover:not(.active) {
 }
 
 .smalllogo {
-  float: left;
+  z-index: 2;
+  position: absolute;
+  
+}
+
+
+.mobilelogo{
+  
+  position: absolute;
+  display: none;
 }
 
 .covid {
@@ -84,17 +93,46 @@ p a:hover {
   color: var(--paleyellow);
 }
 
-.mainlogo {
-  transform: scale(1, 1);
-  width: 100vw;
-  
-}
+
 .hero img{
- 
+  z-index: -2;
   position: absolute;
   height: 100vh;
   width: 100vw;
   top: 12.4vh;
+}
+
+@keyframes reviews {
+  
+  0%{color: var(--paleyellow);}
+  25% {color: var(--lightmustard);}
+  60% {color: var(--brown);}
+  100% {color: var(--maroon);}
+  
+
+}
+
+
+.hero .title{
+  position: absolute;
+  bottom: 15vh;
+  width: 100vw;
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  font-size: 15rem;
+  color: var(--maroon);
+  animation: reviews 3.5s ease-in-out 0.5s infinite alternate;
+}
+
+.tagline{
+  width: 100vw;
+  text-align: center;
+  position: absolute;
+  bottom: 30vh;
+  font-family: 'Alegreya', serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--maroon);
 }
 
 .landing {
@@ -109,6 +147,7 @@ label {
   top: 2vh;
   font-size: 1.21875rem;
   display: none;
+  
 }
 #toggle {
   display: none;
@@ -119,9 +158,9 @@ label {
 
 /* for mobiles */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   ul {
-    right: -100vw;
+    right: -120vw;
     transition: all 0.5s ease-in;
     top: 9.6vh;
     z-index: 1;
@@ -150,5 +189,26 @@ label {
     right: 0;
     top: 9.6vh;
   }
+
+  .hero .title{
+    font-size: 6rem;
+    top: 30vh;
+  }
+
+  .tagline{
+    font-size: 1.5rem;
+  }
+  
+  .smalllogo{
+    display:none;
+  }
+
+  .mobilelogo{
+    display: inline;
+    z-index: 2;
+    position: fixed;
+    left: 2vw;
+  }
+  
   
 }

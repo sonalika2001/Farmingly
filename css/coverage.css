@@ -21,7 +21,7 @@ body {
 ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding-left: 20vw;
   overflow: hidden;
   position: fixed;
   top: 0;
@@ -48,12 +48,25 @@ li a:active {
   color: var(--maroon);
 }
 
+
 .active {
   background-color: var(--lightmustard);
 }
 
 li:hover:not(.active) {
   background-color: var(--lightmustard);
+}
+
+.smalllogo {
+  z-index: 2;
+  position: fixed;
+  
+}
+
+.mobilelogo{
+  
+  position: absolute;
+  display: none;
 }
 
 label {
@@ -76,7 +89,7 @@ section{
     margin: 0;
     width: 100%;
     height: 87.7vh;
-    background: url(/images/covid.jpg);
+    background: url(/images/news.jfif);
     background-size: cover;
     position: relative;
     top:12.3vh;
@@ -181,7 +194,7 @@ iframe{
 
 
 footer{
-  margin-top: 550vh ;
+  margin-top: 500vh ;
   background-color: var(--maroon);
   padding: 50px;
 }
@@ -210,9 +223,9 @@ i{
 
 /* for mobiles */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   ul {
-    right: -100vw;
+    right: -120vw;
     transition: all 0.5s ease-in;
     top: 9.6vh;
     z-index: 1;
@@ -234,6 +247,7 @@ i{
     margin: 0;
     top: 0;
     right: 0;
+    z-index: 1;
   }
   #toggle:checked ~ * ul {
     right: 0;
@@ -252,8 +266,19 @@ i{
     font-size: 2rem;
   }
 
+  .smalllogo{
+    display:none;
+  }
+
+  .mobilelogo{
+    display: inline;
+    z-index: 2;
+    position: fixed;
+    left: 2vw;
+  }
+
   footer{
-    margin-top: 900vh;
+    margin-top: 700vh;
   }
   
 }
