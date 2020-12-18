@@ -313,7 +313,9 @@ i{
     margin: 0;
     top: 0;
     right: 0;
+    left: 0;
     z-index: 1;
+    width: 100vw;
   }
   #toggle:checked ~ * ul {
     right: 0;
@@ -390,5 +392,10 @@ i{
     z-index: 2;
     top: 0vh;
     left: 2vw;
+  }
+  .scroll{
+    transform: scale(0.15,0.15);
+    left: -30vw;
+    margin-bottom: 30px;
   }
 }
