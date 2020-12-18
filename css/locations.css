@@ -28,13 +28,14 @@ ul {
   width: 100%;
   background-color: var(--darkmustard);
   z-index: 2;
-   min-height: 50px;
+  min-height: 40px;
 }
 
 
 
 li {
   float: left;
+  min-height: 40px;
 }
 
 li a {
@@ -45,6 +46,7 @@ li a {
   padding: 4.3vh 50px;
   color: var(--white);
   height: 4vh;
+  
 }
 
 li a:active{
@@ -53,7 +55,7 @@ li a:active{
 
 .active {
   background-color: var(--lightmustard);
-   min-height: 50px;
+  min-height: 40px;
 }
 
 li:hover:not(.active) {
@@ -101,15 +103,38 @@ iframe{
   background-color: var(--darkmustard);
   padding: 15px;
   border-radius: 140px;
+  display: inline-block;
+  transition: all 0.5s;
+  cursor: pointer;
 }
 
 .scroll a{
   text-decoration: none;
   color: var(--white);
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
 
-.scroll a:hover{
-  color: var(--maroon);
+.scroll a::after{
+  content: '\21a1';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+
+
+.scroll:hover a{
+ padding-right: 20px;
+}
+
+.scroll:hover a:after{
+  opacity: 1;
+  right: 0;
 }
 
 .content{
@@ -374,7 +399,7 @@ i{
     top: 0;
     right: 0;
     z-index: 1;
-     min-height: 50px;
+    
   }
   #toggle:checked ~ * ul {
     right: 0;
